@@ -46,7 +46,7 @@ uint* HashTable::find(User& _name) {
             }
         }    
     }
-    throw std::runtime_error("User not fund!");
+    return nullptr;
 }
 
 void HashTable::add(User _name, uint* digest) {
